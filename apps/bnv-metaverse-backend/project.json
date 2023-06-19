@@ -1,0 +1,64 @@
+{
+  "name": "bnv-metaverse-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/bnv-metaverse-backend/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/bnv-metaverse-backend",
+        "main": "apps/bnv-metaverse-backend/src/main.ts",
+        "tsConfig": "apps/bnv-metaverse-backend/tsconfig.app.json",
+        "assets": ["apps/bnv-metaverse-backend/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "apps/bnv-metaverse-backend/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "bnv-metaverse-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "bnv-metaverse-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "bnv-metaverse-backend:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/bnv-metaverse-backend/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/bnv-metaverse-backend/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,33 @@
+{
+  "name": "bnv-metaverse-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/bnv-metaverse-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/bnv-metaverse-e2e/cypress.config.ts",
+        "devServerTarget": "bnv-metaverse:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "bnv-metaverse:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "bnv-metaverse:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/bnv-metaverse-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["bnv-metaverse"]
+}

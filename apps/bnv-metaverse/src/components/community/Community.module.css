@@ -1,0 +1,41 @@
+#communityLogos {
+  margin-top: 30px;
+  /* border: 1px solid #D7FD35; */
+  border-radius: 10px;
+  margin-left: 35px;
+}
+
+.span {
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.textColor {
+  color: #d7fd35;
+}
+
+.textFont {
+  font-size: 30px;
+}
+
+.pTag {
+  margin: 0;
+  font-size: 15px;
+}
+
+.featureMargin {
+  margin-top: 50px;
+}
+
+.three {
+  background-image: url(/bov.png);
+  width: 100%;
+  height: 200px;
+  background-repeat: repeat-x;
+}
+
+@media (max-width: 576px) {
+  #communityLogos {
+    margin-left: 95px;
+  }
+}

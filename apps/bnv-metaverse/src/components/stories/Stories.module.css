@@ -1,0 +1,30 @@
+.span {
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.textColor {
+  color: #ffffff;
+}
+
+.textFont {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pTag {
+  margin: 0;
+  font-size: 15px;
+}
+
+#placeHolder {
+  background-color: #000000 !important;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 20px;
+  opacity: inherit;
+  width: 100%;
+  border: 1px solid #d7fd35;
+  margin-top: 10%;
+  height: 7vh;
+}

@@ -1,0 +1,21 @@
+.textCenter {
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.cardGroupMargin {
+  margin-top: 40px;
+}
+
+#placeHolder {
+  background-color: #000000 !important;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 20px;
+  opacity: inherit;
+  width: 100%;
+  border: 1px solid #d7fd35;
+  margin-top: 10%;
+  height: 7vh;
+}

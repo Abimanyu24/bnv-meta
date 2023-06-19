@@ -1,0 +1,25 @@
+.bg-body-tertiary {
+  background-color: black;
+}
+
+.test {
+  background-color: black;
+}
+
+.navLinkStyle {
+  display: block;
+  padding: 10px 15px !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(70, 70, 70);
+  margin-right: 0.75rem;
+  border-radius: 99px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: aktiv-grotesk-extended, -apple-system, BlinkMacSystemFont,
+    'avenir next', avenir, 'segoe ui', 'helvetica neue', helvetica, Ubuntu,
+    roboto, noto, arial, sans-serif;
+}
+
+.navbarToggler {
+  background-color: white !important;
+}

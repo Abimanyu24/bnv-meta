@@ -1,0 +1,45 @@
+.color {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+li {
+  padding: 10px 0 10px 0;
+}
+
+.leftColumn {
+  padding-top: 85px;
+}
+
+.rightColumn {
+  border-left: 1px solid;
+  padding-top: 75px;
+  padding-left: 65px !important;
+}
+
+#footerInputGroup {
+  margin: 10px 10px 0 0;
+}
+
+#footerLogos {
+  margin-top: 30px;
+}
+
+.tradeMark {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .rightColumn {
+    border-left: 0px;
+    margin-top: 75px !important;
+    border-top: 1px solid #464646;
+    padding-left: 0px !important;
+  }
+}

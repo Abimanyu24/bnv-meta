@@ -1,0 +1,73 @@
+.textCenter {
+  text-align: center;
+}
+
+.cardTitle {
+  color: #d7fd35;
+}
+
+.cardComponent {
+  /* margin: 0px 0 15px 20px; */
+  width: 18rem;
+  margin: 30px 15px 0px 15px;
+  border: 1px solid;
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+#placeHolder {
+  background-color: #d7fd35 !important;
+  color: #000000;
+  font-size: 12px;
+  border-radius: 20px;
+  opacity: inherit;
+  width: 100%;
+  border: 0px;
+}
+
+#btnPlaceHolder {
+  background-color: #333333 !important;
+  font-size: 12px;
+  border-radius: 20px;
+  opacity: inherit;
+  /* width: 100%; */
+  border: 0px;
+  width: 85%;
+  margin: 10px 0 0 0;
+}
+.plc1 {
+  color: #000000 !important;
+}
+
+.plc2 {
+  color: #d7fd35 !important;
+}
+
+.placeHolderDiv {
+  position: absolute;
+  transform: translate(13%, -50%);
+  border: 0px;
+  border-color: #000000;
+}
+
+#example {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #d7fd35;
+  padding: 5px;
+}
+
+.cardDefaultStyle {
+  color: #d7fd35;
+}
+
+@media (max-width: 576px) {
+  .custom-class {
+    display: block;
+  }
+
+  #placeHolder {
+    color: #ffffff;
+  }
+}
